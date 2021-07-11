@@ -1,0 +1,130 @@
+.main_full{
+  margin-left: 50px;
+  margin-right: 50px;
+  display: block;
+  box-sizing: inherit;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+.ui-widget{
+
+  .custom-container{
+    max-width: 1200px !important;
+    z-index: 2;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  .text-header{
+    font-size: 1.5em;
+    margin-bottom: .8em;
+    padding-bottom: .3em;
+    padding-top: 1em;
+    line-height: 1.25;
+    position: relative;
+    margin-top: 30px !important;
+    font-family: source_sans_proregular,Arial,sans-serif;
+    letter-spacing: 0;
+    font-weight: 400 !important;
+    color: #34313f;
+    text-align: center;
+  }
+
+  .area{
+
+    &__left{
+      float: left;
+      width: 53%;
+      text-align: center;
+
+      &__img{
+        width: 90%;
+        padding-top: 50px;
+      }
+
+    }
+
+    &__right{
+      float: left;
+      width: 45%;
+      padding-top: 50px;
+      padding-left: 20px;
+      font-size: 1.2em;
+      font-family: source_sans_proregular,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+      line-height: 1.4285em;
+      color: rgba(0,0,0,.87);
+
+      &__title{
+        margin-top: 1.5em;
+        font-size: 1em;
+        margin-bottom: 1em;
+        line-height: 1.25;
+        position: relative;
+        font-family: source_sans_proregular,Arial,sans-serif;
+        letter-spacing: 0;
+        font-weight: 400 !important;
+        color: #4f4d59;
+
+        &:first-child{
+          margin-top: 0;
+        }
+
+      }
+
+      &__text{
+        margin-top: 0;
+        margin-bottom: 1.2em;
+        font-family: source_sans_prolight,Arial,sans-serif;
+        font-size: .9375rem;
+        line-height: 1.5rem !important;
+        color: #898891;
+
+      }
+
+      &__link{
+        color: #325dfc;
+        font-family: source_sans_proregular,Arial,sans-serif;
+        text-decoration: none !important;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+
+.custom_product{
+
+  @include breakpoint("medium") {
+    display: flex;
+  }
+
+  &__title{
+    @include breakpoint("medium") {
+      display: none;
+    }
+  }
+
+  &__description{
+    @include breakpoint("medium"){
+    display: none;
+    }
+  }
+}
+
+.isMobileOnly{
+  @include breakpoint("medium") {
+    display: none;
+  }
+}
+
+.blog_date{
+  text-align: left;
+  text-decoration: none;
+  pointer-events: none;
+  cursor: default;
+  color: #888;
+}
+.rating_style{
+display: flex;
+}
+

@@ -1,0 +1,47 @@
+
+<a href="#main-content" class="skip-to-main-link">{{lang 'header.skip_to_main'}}</a>
+{{#if banners.top}}
+<div class="banners" data-banner-location="top">
+    {{#each (limit banners.top_metadata 1)}}
+    <div class="banner" data-event-type="promotion" data-entity-id="{{this.id}}" data-name="{{this.banner-name}}" data-position="{{this.location}}" data-banner-id="{{this.banner-name}}">
+        <div data-event-type="promotion-click">
+            {{{this.content}}}
+        </div>
+    </div>
+    {{/each}}
+</div>
+{{/if}}
+<section class="header_menu">
+
+    <a href="#" class="mobileMenu-toggle" data-mobile-menu-toggle="menu">
+
+        <span class="mobileMenu-toggleIcon">Toggle menu</span>
+    </a>
+
+
+    {{> components/common/navigation }}
+</section>
+<header class="header" role="banner">
+
+<div class="header_header">
+    <div class="header-logo header-logo--{{theme_settings.logo-position}}">
+        <h1 style="margin-left: 75px">
+            {{> components/common/store-logo}}
+        </h1>
+    </div>
+
+
+    <div class="navPages-container" id="menu" data-menu style="margin-left: 675px">
+        {{> components/common/navigation-menu}}
+    </div>
+</div>
+
+
+
+</header>
+{{{region name="header_bottom--global"}}}
+{{{region name="header_bottom"}}}
+
+
+
+

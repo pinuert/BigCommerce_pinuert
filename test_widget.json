@@ -1,0 +1,123 @@
+{
+  "name": "DZ2",
+  "template": "<div class=\"ui-widget\"> <div class=\"container custom-container\"> <h2 class=\"text-header\" style=\"font-size: {{size}}\">  {{header}} </h2> <div class=\"custom-container\"><div class=\"area__left\"> <img class=\"area__left__img\" src=\"{{image.src}}\" alt=\"{{imageAlt}}\"> </div> <div class=\"area__right\"> <h3 class=\"area__right__title\">{{title1}}</h3> <p class=\"area__right__text\"> {{text1}} </p> <a class=\"area__right__link\" href=\"{{link1}}\" style=\"color: {{color1}}\">Learn More</a> <br> <h3 class=\"area__right__title\">{{title2}}</h3> <p class=\"area__right__text\"> {{text2}} </p> <a class=\"area__right__link\" href=\"{{link2}}\" style=\"color: {{color2}}\">Learn More</a> <br> <h3 class=\"area__right__title\">{{title3}}</h3> <p class=\"area__right__text\"> {{text3}} </p> <a class=\"area__right__link\" href=\"{{link3}}\" style=\"color: {{color3}}\" >Learn More</a> </div> </div> </div> </div>",
+  "schema": [
+    {
+      "label": "Design",
+      "type": "tab",
+      "sections": [
+        {
+          "label": "Header",
+          "settings": [
+            {
+              "id": "header",
+              "type": "input",
+              "default": "Header info"
+            },
+            {
+              "id": "size",
+              "type": "input",
+              "default": "header size"
+            }
+          ]
+        },
+        {
+          "label": "Image",
+          "settings": [
+            {
+              "id": "image",
+              "type": "imageManager",
+              "default": {
+                "src": "https://storage.googleapis.com/bigcommerce-production-dev-center/images/CaaS_LP2_4019_SJ.png",
+                "type": "IMAGE_MANAGER"
+              }
+            },
+            {
+              "id": "imageAlt",
+              "type": "input",
+              "default": "alt for image"
+            }
+          ]
+        },
+        {
+          "label": "Text1",
+          "settings": [
+            {
+              "id": "title1",
+              "type": "input",
+              "default": "title1"
+            },
+            {
+              "id": "text1",
+              "type": "input",
+              "default": "description text1"
+            },
+            {
+              "id": "link1",
+              "type": "input",
+              "default": "link"
+            },
+            {
+              "id": "color1",
+              "type": "input",
+              "default": "link-color"
+            }
+          ]
+        },
+
+        {
+          "label": "Text2",
+          "settings": [
+            {
+              "id": "title2",
+              "type": "input",
+              "default": "title2"
+            },
+            {
+              "id": "text2",
+              "type": "input",
+              "default": "description text2"
+            },
+            {
+              "id": "link2",
+              "type": "input",
+              "default": "link"
+            },
+            {
+              "id": "color2",
+              "type": "input",
+              "default": "link-color"
+            }
+          ]
+        },
+
+        {
+          "label": "Text3",
+          "settings": [
+            {
+              "id": "title3",
+              "type": "input",
+              "default": "title3"
+            },
+            {
+              "id": "text3",
+              "type": "input",
+              "default": "description text3"
+            },
+            {
+              "id": "link3",
+              "type": "input",
+              "default": "link3"
+            },
+            {
+              "id": "color3",
+              "type": "input",
+              "default": "link-color"
+            }
+          ]
+        }
+
+      ]
+    }
+  ]
+}
